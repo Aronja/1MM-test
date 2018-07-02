@@ -20,8 +20,8 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + "/src/",
-    filename: "client.min.js"
+    path: path.resolve(__dirname, "build"),
+    filename: "index.bundle.js"
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
