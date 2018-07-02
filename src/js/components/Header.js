@@ -1,4 +1,5 @@
 import React from "react";
+const logo = require('./../../img/1mm-logo.png');
 
 export default class Header extends React.Component {
 
@@ -8,7 +9,7 @@ export default class Header extends React.Component {
         <header>
           <nav>
             <div clas="row">
-              <img src="img/1mm-logo.png" alt="1MM logo" class="logo"/>
+              <img src={logo} alt="1MM logo" class="logo"/>
               <ul class="main-nav">
                 <li><a href="#">The power of mentoring</a></li>
                 <li><a href="#">Register</a></li>
@@ -21,4 +22,3 @@ export default class Header extends React.Component {
     );
   }
 }
-

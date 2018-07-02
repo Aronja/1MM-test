@@ -7,16 +7,15 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : false,
   entry: "./js/client.js",
   module: {
-    rules: [
-      {
-        test: /css\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
-    ],
     loaders: [
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: "file-loader"
+      },
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,

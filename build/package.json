@@ -34,9 +34,6 @@
     "webui-popover": ""
   },
   "devDependencies": {
-    "css-loader": "^0.28.11",
-    "file-loader": "^1.1.11",
-    "style-loader": "^0.21.0",
     "webpack": "^1.15.0"
   },
   "scripts": {

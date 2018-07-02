@@ -5,6 +5,9 @@ import Layout from './pages/Layout'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import {Router, Route, IndexRoute, hashHistory } from 'react-router'
+import './../css/style.css';
+import './../css/normalize.css';
+import './../css/grid.css';
 
 let store = createStore(oneMillionMentorsApp)
 
