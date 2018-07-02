@@ -7,6 +7,15 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : false,
   entry: "./js/client.js",
   module: {
+    rules: [
+      {
+        test: /css\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ],
     loaders: [
       {
         test: /\.jsx?$/,
