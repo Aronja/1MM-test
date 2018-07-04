@@ -15,7 +15,6 @@
     "babel-preset-stage-0": "^6.3.13",
     "jquery": "latest",
     "lodash": "4.16.4",
-    "node-sass": "3.10.1",
     "react": "15.3.2",
     "react-dom": "15.3.2",
     "react-foundation": "0.7.0",
