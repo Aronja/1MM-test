@@ -41,7 +41,7 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "start": "PORT=8080 node_modules/.bin/serve -s .",
+    "start": "node_modules/.bin/serve -s .",
     "clean": "rm -rf build/",
     "test-build": " webpack --config webpack.config.js",
     "build": "npm run clean && node_modules/.bin/webpack --config webpack.prod.config.js && cp src/index.html build/ && cp package.json build/ && cp server.js build/ "
