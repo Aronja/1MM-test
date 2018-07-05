@@ -15,7 +15,6 @@
     "babel-preset-stage-0": "^6.3.13",
     "jquery": "latest",
     "lodash": "4.16.4",
-    "node-sass": "3.10.1",
     "react": "15.3.2",
     "react-dom": "15.3.2",
     "react-foundation": "0.7.0",
@@ -41,10 +40,11 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/serve -s .",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "PORT=8080 node_modules/.bin/serve -s .",
     "clean": "rm -rf build/",
-    "build": "npm run clean && webpack --config webpack.prod.config.js && cp src/index.html build/ && cp package.json build/ && cp server.js build/ && cd build/ && zip build.zip *np"
+    "test-build": " webpack --config webpack.config.js",
+    "build": "npm run clean && node_modules/.bin/webpack --config webpack.prod.config.js && cp src/index.html build/ && cp package.json build/ && cp server.js build/ "
   },
   "author": "",
   "license": "ISC"
